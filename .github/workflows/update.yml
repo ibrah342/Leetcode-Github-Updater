@@ -1,0 +1,43 @@
+name: Update LeetCode Activity
+
+# Schedule: Runs every day at midnight (UTC time)
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions
+
+jobs:
+  update:
+    runs-on: ubuntu-latest  # Runs on a Linux environment
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Clones your repo to the GitHub runner
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'  # Use Python 3.9 (you can change this version if needed)
+
+      - name: Install Dependencies
+        run: pip install requests  # Install required Python package
+
+      - name: Create Config File  # Generates config.json securely (Secret stored in GitHub)
+        run: |
+          echo '{
+            "github_username": "${{ secrets.USERNAME }}",
+            "github_repo": "${{ secrets.REPO }}",
+            "github_token": "${{ secrets.TOKEN }}"
+          }' > config.json
+
+      - name: Run Script
+        run: python main.py  # Executes your Python script
+
+      - name: Push Changes to GitHub
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "action@github.com"
+          git add solved_problems.json
+          git commit -m "Auto-update solved problems [$(date)]" || echo "No changes to commit"
+          git push
