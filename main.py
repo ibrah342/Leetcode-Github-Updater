@@ -9,7 +9,6 @@ with open("config.json", "r") as config_file:
     config = json.load(config_file)  # Read and convert JSON data into a Python dictionary
 
 # API URL that gives us the solved LeetCode problems
-# LEETCODE_API_URL = "https://alfa-leetcode-api.onrender.com/username/solved"
 # LEETCODE_API_URL = "https://alfa-leetcode-api.onrender.com/{ibrah342}/solved" doestn work
 
 
