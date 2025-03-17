@@ -1,27 +1,99 @@
 {
     "solved": [
-      {
-        "id": 1,
-        "title": "Two Sum",
-        "difficulty": "Easy",
-        "date_solved": "2025-03-10"
-      },
-      {
-        "id": 2,
-        "title": "Binary Search",
-        "difficulty": "Medium",
-        "date_solved": "2025-03-11"
-      }
-
-
+        {
+            "title": "Remove Element",
+            "titleSlug": "remove-element",
+            "timestamp": "1742192828"
+        },
+        {
+            "title": "Longest Palindromic Substring",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Remove Duplicates from Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Is Subsequence",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Merge Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Merge Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Best Time to Buy and Sell Stock",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Group Anagrams",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Valid Anagram",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Contains Duplicate",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Maximum Count of Positive Integer and Negative Integer",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Remove Duplicates from Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Remove Duplicates from Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Reverse Vowels of a String",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Squares of a Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Squares of a Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Squares of a Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Reverse String",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Reverse Only Letters",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
+        }
     ]
-
-    
-    
-  }
-
-  
-
-
-
-  
+}
