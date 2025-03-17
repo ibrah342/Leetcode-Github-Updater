@@ -99,6 +99,11 @@
             "title": "Top K Frequent Elements",
             "difficulty": "Unknown",
             "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Move Zeroes",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
         }
     ]
 }
