@@ -19,12 +19,14 @@ GITHUB_TOKEN = config["github_token"]  # Token used to authenticate GitHub comma
 
 # Fetch solved problems from LeetCode API
 response = requests.get(LEETCODE_API_URL)
+print("Raw API response:", response.text)
+
 
 if response.status_code == 200:
     data = response.json()
     
     if isinstance(data, dict):  # If API returns a dictionary
-        solved_problems = data.get("solved", [])  # Get the 'solved' list
+        solved_problems = data.get("recentSubmissions", [])  # Get the 'recentSubmissions' list
     else:
         solved_problems = data  # If already a list, use it directly
 else:
@@ -39,14 +41,14 @@ else:
     solved_data = {"solved": []}  # If the file doesn't exist, create an empty list
 
 # Avoid duplicates by storing IDs of problems we already saved
-existing_ids = {problem["id"] for problem in solved_data["solved"]}  # Get set of problem IDs
+existing_titles = {problem["title"] for problem in solved_data["solved"]}
 
-print("Existing problem IDs:", existing_ids)  # Print the existing problem IDs
+print("Existing problem IDs:", existing_titles)  # Print the existing problem IDs
 print("Fetched problems:", solved_problems)  # Print what the script is actually seeing
 
 new_problems = [
-    problem for problem in solved_problems  # Loop through all solved problems
-    if problem["id"] not in existing_ids  # Keep only new problems (not already saved)
+    problem for problem in solved_problems
+    if problem["title"] not in existing_titles  # Check by title instead of ID
 ]
 
 if not new_problems:  # If no new problems were found
@@ -56,9 +58,8 @@ if not new_problems:  # If no new problems were found
 #  Add new solved problems to our JSON file
 for problem in new_problems:
     solved_data["solved"].append({
-        "id": problem["id"],  # Problem ID
-        "title": problem["title"],  # Problem title
-        "difficulty": problem["difficulty"],  # Difficulty level (Easy, Medium, Hard)
+        "title": problem["title"],  # Use title as identifier
+        "difficulty": "Unknown",  # API doesn't return difficulty
         "date_solved": datetime.now().strftime("%Y-%m-%d")  # Store today's date
     })
 
