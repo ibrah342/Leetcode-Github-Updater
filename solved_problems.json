@@ -94,6 +94,11 @@
             "title": "Reverse Only Letters",
             "difficulty": "Unknown",
             "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Top K Frequent Elements",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-17"
         }
     ]
 }
