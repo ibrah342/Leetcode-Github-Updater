@@ -35,9 +35,12 @@ jobs:
         run: python main.py  # Executes your Python script
 
       - name: Push Changes to GitHub
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "action@github.com"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}.git
           git add solved_problems.json
           git commit -m "Auto-update solved problems [$(date)]" || echo "No changes to commit"
-          git push
+          git push origin main || echo "Push failed, possibly no changes to push"
