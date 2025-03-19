@@ -104,6 +104,16 @@
             "title": "Move Zeroes",
             "difficulty": "Unknown",
             "date_solved": "2025-03-17"
+        },
+        {
+            "title": "Roman to Integer",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-19"
+        },
+        {
+            "title": "Binary Search",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-19"
         }
     ]
 }
