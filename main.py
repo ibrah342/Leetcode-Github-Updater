@@ -9,7 +9,7 @@ with open("config.json", "r") as config_file:
     config = json.load(config_file)  # Read and convert JSON data into a Python dictionary
 
 # API URL that gives us the solved LeetCode problems
-LEETCODE_API_URL = "https://leetcode-api-faisalshohag.vercel.app/ibrah342" 
+LEETCODE_API_URL = "https://leetcode-api-faisalshohag.vercel.app/ibrah-342" 
 
 
 # Get GitHub details from the config file
@@ -59,7 +59,6 @@ if not new_problems:  # If no new problems were found
 for problem in new_problems:
     solved_data["solved"].append({
         "title": problem["title"],  # Use title as identifier
-        "difficulty": "Unknown",  # API doesn't return difficulty
         "date_solved": datetime.now().strftime("%Y-%m-%d")  # Store today's date
     })
 
