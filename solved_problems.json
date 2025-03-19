@@ -99,6 +99,11 @@
             "title": "Reverse Vowels of a String",
             "difficulty": "Unknown",
             "date_solved": "2025-03-20"
+        },
+        {
+            "title": "Two Sum",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-20"
         }
     ]
 }
