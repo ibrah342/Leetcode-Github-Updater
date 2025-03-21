@@ -27,6 +27,10 @@
         {
             "title": "Reverse String",
             "date_solved": "2025-03-21"
+        },
+        {
+            "title": "Remove Element",
+            "date_solved": "2025-03-21"
         }
     ]
 }
