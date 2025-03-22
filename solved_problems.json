@@ -31,6 +31,10 @@
         {
             "title": "Remove Element",
             "date_solved": "2025-03-21"
+        },
+        {
+            "title": "Merge Sorted Array",
+            "date_solved": "2025-03-22"
         }
     ]
 }
