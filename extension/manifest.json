@@ -5,12 +5,14 @@
     "description": "Click to update solved LeetCode problems on GitHub",
     "permissions": ["activeTab", "storage", "scripting"],
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
-    }
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "https://leetcode.com/*",
+      "https://api.github.com/*"
+    ]
   }
   
