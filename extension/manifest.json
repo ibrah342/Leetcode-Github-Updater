@@ -2,18 +2,15 @@
     "manifest_version": 3,
     "name": "LeetCode GitHub Updater",
     "version": "1.0",
-    "description": "Update GitHub with solved LeetCode problems.",
-    "permissions": ["storage", "scripting"],
-    "host_permissions": [
-      "https://leetcode.com/*",
-      "https://api.github.com/*"
-    ],
+    "description": "Click to update solved LeetCode problems on GitHub",
+    "permissions": ["activeTab", "storage", "scripting"],
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "background": {
-      "service_worker": "background.js"
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
     }
   }
   
