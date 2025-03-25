@@ -35,11 +35,6 @@
             "date_solved": "2025-03-26"
         },
         {
-            "title": "Reverse Only Letters",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-26"
-        },
-        {
             "title": "Reverse Vowels of a String",
             "difficulty": "Unknown",
             "date_solved": "2025-03-26"
@@ -50,12 +45,12 @@
             "date_solved": "2025-03-26"
         },
         {
-            "title": "Two Sum",
+            "title": "Longest Palindromic Substring",
             "difficulty": "Unknown",
             "date_solved": "2025-03-26"
         },
         {
-            "title": "Longest Palindromic Substring",
+            "title": "Two Sum",
             "difficulty": "Unknown",
             "date_solved": "2025-03-26"
         }
