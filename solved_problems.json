@@ -5,236 +5,54 @@
             "date_solved": "2025-03-20"
         },
         {
+            "title": "Valid Palindrome",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
+        },
+        {
+            "title": "Merge Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
+        },
+        {
+            "title": "Remove Element",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
+        },
+        {
             "title": "Intersection of Two Arrays",
-            "date_solved": "2025-03-21"
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
         },
         {
             "title": "Is Subsequence",
-            "date_solved": "2025-03-21"
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
         },
         {
             "title": "Reverse Only Letters",
-            "date_solved": "2025-03-21"
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
         },
         {
             "title": "Reverse Only Letters",
-            "date_solved": "2025-03-21"
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
         },
         {
             "title": "Reverse Vowels of a String",
-            "date_solved": "2025-03-21"
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
         },
         {
             "title": "Reverse String",
-            "date_solved": "2025-03-21"
-        },
-        {
-            "title": "Remove Element",
-            "date_solved": "2025-03-21"
-        },
-        {
-            "title": "Merge Sorted Array",
-            "date_solved": "2025-03-22"
-        },
-        {
-            "title": "Roman to Integer",
             "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
+            "date_solved": "2025-03-26"
         },
         {
-            "title": "Binary Search",
+            "title": "Two Sum",
             "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Best Time to Buy and Sell Stock",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Move Zeroes",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Top K Frequent Elements",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Longest Palindromic Substring",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Remove Element",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Remove Element",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Is Subsequence",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Merge Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Merge Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Best Time to Buy and Sell Stock",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Group Anagrams",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Valid Anagram",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Contains Duplicate",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Maximum Count of Positive Integer and Negative Integer",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Reverse Vowels of a String",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-24"
-        },
-        {
-            "title": "Roman to Integer",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Binary Search",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Best Time to Buy and Sell Stock",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Move Zeroes",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Top K Frequent Elements",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Longest Palindromic Substring",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Remove Element",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Remove Element",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Is Subsequence",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Merge Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Merge Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Best Time to Buy and Sell Stock",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Group Anagrams",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Valid Anagram",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Contains Duplicate",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Maximum Count of Positive Integer and Negative Integer",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
-        },
-        {
-            "title": "Reverse Vowels of a String",
-            "difficulty": "Unknown",
-            "date_solved": "2025-03-25"
+            "date_solved": "2025-03-26"
         }
     ]
 }
