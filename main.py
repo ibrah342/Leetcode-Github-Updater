@@ -13,7 +13,7 @@ GITHUB_TOKEN = os.getenv("GIT_TOKEN")
 
 # LeetCode API URL (dynamic based on env variable if desired)
 LEETCODE_USERNAME = os.getenv("LEETCODE_USERNAME")
-LEETCODE_API_URL = f"https://leetcode-api-faisalshohag.vercel.app/ibrah342"
+LEETCODE_API_URL = f"https://leetcode-api-faisalshohag.vercel.app/ibrah-342"
 
 # Fetch solved problems from LeetCode API
 response = requests.get(LEETCODE_API_URL)
