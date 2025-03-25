@@ -53,6 +53,11 @@
             "title": "Two Sum",
             "difficulty": "Unknown",
             "date_solved": "2025-03-26"
+        },
+        {
+            "title": "Remove Duplicates from Sorted Array",
+            "difficulty": "Unknown",
+            "date_solved": "2025-03-26"
         }
     ]
 }
