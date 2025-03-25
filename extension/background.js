@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
           sendResponse({ message });
         });
       });
-      return true; // Needed to use sendResponse asynchronously
+      return true; 
     }
   });
   
