@@ -23,15 +23,18 @@ jobs:
           python-version: '3.9'  # Use Python 3.9 (you can change this version if needed)
 
       - name: Install Dependencies
-        run: pip install requests  # Install required Python package
+        run: pip install requests python-dotenv
 
-      - name: Create Config File  # Generates config.json securely (Secret stored in GitHub)
+
+      - name: Create .env File
         run: |
-          echo '{
-            "github_username": "${{ secrets.USERNAME }}",
-            "github_repo": "${{ secrets.REPO }}",
-            "github_token": "${{ secrets.TOKEN }}"
-          }' > config.json
+          echo "GITHUB_USERNAME=${{ secrets.USERNAME }}" >> .env
+          echo "GITHUB_REPO=https://github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}" >> .env
+          echo "GITHUB_TOKEN=${{ secrets.TOKEN }}" >> .env
+          echo "LEETCODE_USERNAME=${{ secrets.LEETCODE_USERNAME }}" >> .env
+      
+      
+      
 
       - name: Run Script
         run: python main.py  # Executes your Python script

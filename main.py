@@ -6,14 +6,17 @@ from datetime import datetime
 from urllib.parse import quote
 from dotenv import load_dotenv
 
-# Load GitHub credentials from environment variables
-GITHUB_USERNAME = os.getenv("GIT_USERNAME")
-GITHUB_REPO = os.getenv("GIT_REPO")  # e.g. "https://github.com/yourusername/yourrepo"
-GITHUB_TOKEN = os.getenv("GIT_TOKEN")
+
+load_dotenv()
+
+
+GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_REPO = os.getenv("GITHUB_REPO")
 
 # LeetCode API URL (dynamic based on env variable if desired)
 LEETCODE_USERNAME = os.getenv("LEETCODE_USERNAME")
-LEETCODE_API_URL = f"https://leetcode-api-faisalshohag.vercel.app/ibrah-342"
+LEETCODE_API_URL = f"https://leetcode-api-faisalshohag.vercel.app/{LEETCODE_USERNAME}"
 
 # Fetch solved problems from LeetCode API
 response = requests.get(LEETCODE_API_URL)
@@ -69,13 +72,12 @@ commit_message = f"Updated solved problems ({len(new_problems)} new)"
 subprocess.run(["git", "add", "solved_problems.json"], check=True)
 subprocess.run(["git", "commit", "-m", commit_message], check=True)
 
-# Set Git remote using secure tokenized URL
-GITHUB_USERNAME = "ibra342"
-GITHUB_TOKEN = "your_token_here"  # paste your actual token here
-GITHUB_REPO = "https://github.com/ibra342/Leetcode-Github-Updater"
-
+GITHUB_USERNAME = os.getenv("GIT_USERNAME")
+GITHUB_TOKEN = os.getenv("GIT_TOKEN")
+GITHUB_REPO = os.getenv("GIT_REPO")
 # Create the remote URL with token included
 remote_url = GITHUB_REPO.replace("https://", f"https://{GITHUB_USERNAME}:{GITHUB_TOKEN}@")
+
 
 # Use it to push your changes
 import subprocess
