@@ -1,30 +1,25 @@
 name: Update LeetCode Activity
 
-# Schedule: Runs every day at midnight (UTC time)
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
-
-
-
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+  workflow_dispatch:        # Allows manual trigger from GitHub Actions
 
 jobs:
   update:
-    runs-on: ubuntu-latest  # Runs on a Linux environment
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # Clones your repo to the GitHub runner
+        uses: actions/checkout@v3
 
       - name: Set Up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.9'  # Use Python 3.9 (you can change this version if needed)
-
+          python-version: '3.9'
+      
       - name: Install Dependencies
-        run: pip install requests python-dotenv
-
+        run: pip install -r requirements.txt
 
       - name: Create .env File
         run: |
@@ -32,19 +27,19 @@ jobs:
           echo "GITHUB_REPO=https://github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}" >> .env
           echo "GITHUB_TOKEN=${{ secrets.TOKEN }}" >> .env
           echo "LEETCODE_USERNAME=${{ secrets.LEETCODE_USERNAME }}" >> .env
-      
-      
-      
+
+      - name: Configure Git identity
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions[bot]"
 
       - name: Run Script
-        run: python main.py  # Executes your Python script
+        run: python main.py
 
       - name: Push Changes to GitHub
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "action@github.com"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}.git
           git add solved_problems.json
           git commit -m "Auto-update solved problems [$(date)]" || echo "No changes to commit"
