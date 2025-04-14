@@ -198,6 +198,11 @@
             "title": "Two Sum",
             "difficulty": "Unknown",
             "date_solved": "2025-04-14"
+        },
+        {
+            "title": "Valid Anagram",
+            "difficulty": "Unknown",
+            "date_solved": "2025-04-14"
         }
     ]
 }
