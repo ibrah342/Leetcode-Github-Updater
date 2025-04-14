@@ -68,12 +68,6 @@ with open("solved_problems.json", "w") as file:
 print(f"Added {len(new_problems)} new problems.")
 
 # Git commit & push
-# Set up authenticated remote BEFORE committing
-GIT_USERNAME = os.getenv("GIT_USERNAME")
-GIT_TOKEN = os.getenv("GIT_TOKEN")
-GIT_REPO = os.getenv("GIT_REPO")
-remote_url = GIT_REPO.replace("https://", f"https://{GIT_USERNAME}:{GIT_TOKEN}@")
-subprocess.run(["git", "remote", "set-url", "origin", remote_url])
 
 # Git commit & push
 commit_message = f"Updated solved problems ({len(new_problems)} new)"
