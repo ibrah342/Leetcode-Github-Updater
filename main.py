@@ -10,9 +10,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-GITHUB_REPO = os.getenv("GITHUB_REPO")
+GIT_USERNAME = os.getenv("GIT_USERNAME")
+GIT_TOKEN = os.getenv("GIT_TOKEN")
+GIT_REPO = os.getenv("GIT_REPO")
 
 # LeetCode API URL (dynamic based on env variable if desired)
 LEETCODE_USERNAME = os.getenv("LEETCODE_USERNAME")
