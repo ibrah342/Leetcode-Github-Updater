@@ -17,15 +17,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.9'
-      
+
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
       - name: Create .env File
         run: |
-          echo "GIT_USERNAME=${{ secrets.USERNAME }}" >> .env
-          echo "GIT_REPO=https://github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}" >> .env
-          echo "GIT_TOKEN=${{ secrets.TOKEN }}" >> .env
           echo "LEETCODE_USERNAME=${{ secrets.LEETCODE_USERNAME }}" >> .env
 
       - name: Configure Git identity
@@ -40,7 +37,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}.git
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
           git add solved_problems.json
           git commit -m "Auto-update solved problems [$(date)]" || echo "No changes to commit"
-          git push origin main || echo "Push failed, possibly no changes to push"
+          git push origin main || echo "Nothing to push"
