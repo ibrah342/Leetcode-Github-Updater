@@ -76,3 +76,4 @@ subprocess.run(["git", "commit", "-m", commit_message], check=True)
 
 
 print("✅ Successfully updated GitHub!")
+#writing to see if I can commit manually
