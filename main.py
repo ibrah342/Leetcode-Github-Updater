@@ -73,7 +73,6 @@ print(f"Added {len(new_problems)} new problems.")
 commit_message = f"Updated solved problems ({len(new_problems)} new)"
 subprocess.run(["git", "add", "solved_problems.json"], check=True)
 subprocess.run(["git", "commit", "-m", commit_message], check=True)
-subprocess.run(["git", "push", "origin", "main"])
 
 
 print("✅ Successfully updated GitHub!")
