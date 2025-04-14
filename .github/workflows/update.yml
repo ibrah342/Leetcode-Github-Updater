@@ -23,9 +23,9 @@ jobs:
 
       - name: Create .env File
         run: |
-          echo "GITHUB_USERNAME=${{ secrets.USERNAME }}" >> .env
-          echo "GITHUB_REPO=https://github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}" >> .env
-          echo "GITHUB_TOKEN=${{ secrets.TOKEN }}" >> .env
+          echo "GIT_USERNAME=${{ secrets.USERNAME }}" >> .env
+          echo "GIT_REPO=https://github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}" >> .env
+          echo "GIT_TOKEN=${{ secrets.TOKEN }}" >> .env
           echo "LEETCODE_USERNAME=${{ secrets.LEETCODE_USERNAME }}" >> .env
 
       - name: Configure Git identity

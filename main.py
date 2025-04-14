@@ -68,20 +68,18 @@ with open("solved_problems.json", "w") as file:
 print(f"Added {len(new_problems)} new problems.")
 
 # Git commit & push
+# Set up authenticated remote BEFORE committing
+GIT_USERNAME = os.getenv("GIT_USERNAME")
+GIT_TOKEN = os.getenv("GIT_TOKEN")
+GIT_REPO = os.getenv("GIT_REPO")
+remote_url = GIT_REPO.replace("https://", f"https://{GIT_USERNAME}:{GIT_TOKEN}@")
+subprocess.run(["git", "remote", "set-url", "origin", remote_url])
+
+# Git commit & push
 commit_message = f"Updated solved problems ({len(new_problems)} new)"
 subprocess.run(["git", "add", "solved_problems.json"], check=True)
 subprocess.run(["git", "commit", "-m", commit_message], check=True)
-
-GITHUB_USERNAME = os.getenv("GIT_USERNAME")
-GITHUB_TOKEN = os.getenv("GIT_TOKEN")
-GITHUB_REPO = os.getenv("GIT_REPO")
-# Create the remote URL with token included
-remote_url = GITHUB_REPO.replace("https://", f"https://{GITHUB_USERNAME}:{GITHUB_TOKEN}@")
-
-
-# Use it to push your changes
-import subprocess
-subprocess.run(["git", "remote", "set-url", "origin", remote_url])
 subprocess.run(["git", "push", "origin", "main"])
+
 
 print("✅ Successfully updated GitHub!")
