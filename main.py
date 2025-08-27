@@ -9,7 +9,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
+import os
+print("LEETCODE_USERNAME:", os.getenv("LEETCODE_USERNAME") or "<missing>")
+print("GIT_REPO:", os.getenv("GIT_REPO") or "<missing>")
 
 GIT_USERNAME = os.getenv("GIT_USERNAME")
 GIT_TOKEN = os.getenv("GIT_TOKEN")
