@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+
 GIT_USERNAME = os.getenv("GIT_USERNAME")
 GIT_TOKEN = os.getenv("GIT_TOKEN")
 GIT_REPO = os.getenv("GIT_REPO")
@@ -76,4 +77,4 @@ subprocess.run(["git", "commit", "-m", commit_message], check=True)
 
 
 print("✅ Successfully updated GitHub!")
-#writing to see if I can commit manually
+# Write to see if I can commit manually  
